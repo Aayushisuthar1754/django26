@@ -1,7 +1,6 @@
 <h1>EMPLOYEE LIST</h1>
 <a href="{% url 'createEmployeeWithForm'%}">CREATE EMPLOYEE</a>
 <a href="{% url 'filterEmployee'%}">FILTER EMPLOYEE</a>
-
 <a href="{% url 'sortEmployee' 1 %}">SORT ASC</a>
 <a href="{% url 'sortEmployee' 2 %}">SORT DESC</a>
 
@@ -34,6 +33,7 @@
             <td>
                 {% comment %} <a href="{% url 'deleteEmployee' %}">DELETE</a> {% endcomment %}
                  <a href = "{% url 'deleteEmployee' emp.id %}">DELETE</a>
+                 <a href = "{% url 'updateEmployee' emp.id %}">UPDATE</a>
             </td>
         </tr>
         {% endfor %}

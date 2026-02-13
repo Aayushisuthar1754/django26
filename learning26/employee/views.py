@@ -50,10 +50,10 @@ def employeeFilter(request):
     employee15 = Employee.objects.filter(age__range=[24,30]).values()    
 
     #order by
-    employee16 = Employee.objects.order_by("age").values()     #asc
-    employee17 = Employee.objects.order_by("-age").values()    #desc
+    employee16 = Employee.objects.order_by("age").values()    
+    employee17 = Employee.objects.order_by("-age").values()   
 
-    employee18 = Employee.objects.order_by("-salary").values()    #desc
+    employee18 = Employee.objects.order_by("-salary").values()    
 
     
 
@@ -158,3 +158,13 @@ def sortEmployee(request, id):
         employees = Employee.objects.all()
 
     return render(request, 'employee/employeeList.html', {'employees': employees})
+
+def updateEmployee(request,id):
+    employee = Employee.objects.get(id=id)
+    if request.method == "POST":
+        form = EmployeeForm(request.POST, instance=employee)
+        form.save()
+        return redirect("employeeList")
+    else:
+        form = EmployeeForm(instance=employee)
+        return render(request,"employee/updateemployee.html",{"form":form}) 

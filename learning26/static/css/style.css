@@ -1,0 +1,212 @@
+/* ===== BODY BACKGROUND ===== */
+
+body {
+    margin: 0;
+    
+    background: linear-gradient(135deg, #e3f2fd, #f8f9fa);
+}
+
+/* ===== NAVBAR IMPROVE ===== */
+
+.navbar {
+    background-color: #1f2937;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* ================= CONTENT ================= */
+
+.content {
+    min-height: 80vh;
+}
+
+
+/* ===== PAGE HEADING ===== */
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    color: #0f172a;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    width: 120px;
+    height: 4px;
+    background: #2563eb;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+/* ===== FILTER BUTTONS ===== */
+
+.filter-section {
+    text-align: center;
+    margin: 25px ;
+}
+
+.filter-section a {
+    background: #2563eb;
+    color: white;
+    padding: 8px 18px;
+    margin: 5px;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.filter-section a:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* ===== TABLE CARD STYLE ===== */
+
+table {
+    width: 90%;
+    margin: 20px auto 40px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* TABLE HEADER */
+
+th {
+    background: linear-gradient(to right, #1e40af, #2563eb);
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* TABLE BODY */
+
+td {
+    padding: 14px;
+    text-align: center;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+tr:hover {
+    background: #e0f2fe;
+    transition: 0.3s;
+}
+
+/* ===== ACTION BUTTONS ===== */
+
+td a {
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 2px;
+    display: inline-block;
+}
+
+td a:first-child {
+    background: #ef4444;
+    color: white;
+}
+
+td a:last-child {
+    background: #10b981;
+    color: white;
+}
+
+td a:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+    background: linear-gradient(to right, #111827, #1f2937);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+.form-container {
+        width: 400px;
+        margin: 40px auto;
+        padding: 30px;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    .form-container h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .form-group label {
+        font-weight: bold;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-top: 5px;
+    }
+
+    .submit-btn {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .submit-btn:hover {
+        background: #45a049;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: #007bff;
+    }
+    
